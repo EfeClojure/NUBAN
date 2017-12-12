@@ -27,5 +27,5 @@ NUBAN.prototype.validate = function() {
     var validatedCheckDigit = 10 - (checkSum % 10);
     validatedCheckDigit = validatedCheckDigit == 10 ? 0 : validatedCheckDigit;
 
-    return checkDigit == validatedCheckDigit ? true : false;
-} 
+    return checkDigit === validatedCheckDigit;
+}
